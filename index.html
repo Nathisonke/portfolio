@@ -4,24 +4,29 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Portfolio</title>
+    <title>Baphelele Dhlamini | Quality Assurance Tester</title>
+    <meta
+      name="description"
+      content="Portfolio of Baphelele Nathisonke Dhlamini, quality assurance tester focused on reliable, user-friendly software."
+    />
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="mediaqueries.css" />
   </head>
   <body>
     <nav id="desktop-nav">
-      <div class="logo">Baphelele Nathisonke Dlamini</div>
+      <div class="logo">Baphelele Nathisonke Dhlamini</div>
       <div>
         <ul class="nav-links">
           <li><a href="#about">About</a></li>
-          <li><a href="#experience">Experience</a></li>
+          <li><a href="#experience">QA Skills</a></li>
+          <li><a href="#work">Experience</a></li>
           <li><a href="#projects">Projects</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
       </div>
     </nav>
     <nav id="hamburger-nav">
-      <div class="logo">Baphelele Nathisonke Dlamini</div>
+      <div class="logo">Baphelele Nathisonke Dhlamini</div>
       <div class="hamburger-menu">
         <div class="hamburger-icon" onclick="toggleMenu()">
           <span></span>
@@ -31,7 +36,8 @@
         <div class="menu-links">
           <ul>
             <li><a href="#about" onclick="toggleMenu()">About</a></li>
-            <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+            <li><a href="#experience" onclick="toggleMenu()">QA Skills</a></li>
+            <li><a href="#work" onclick="toggleMenu()">Experience</a></li>
             <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
             <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
           </ul>
@@ -39,37 +45,64 @@
       </div>
     </nav>
     <section id="profile">
-      <div class="section__pic-container">
-        <img src="./assets/profile-pic.jpg" alt="Portrait of Baphelele Nathisonke Dlamini" />
+      <div class="section__pic-container reveal">
+        <img src="./assets/profile-pic.jpg" alt="Portrait of Baphelele Nathisonke Dhlamini" />
       </div>
-      <div class="section__text">
+      <div class="section__text reveal">
+        <div class="status-badge">Open to QA roles</div>
         <p class="section__text__p1">Hello, I'm</p>
-        <h1 class="title">Baphelele Nathisonke Dlamini</h1>
-        <p class="section__text__p2">Fullstack Software Developer</p>
+        <h1 class="title">Baphelele Nathisonke Dhlamini</h1>
+        <p class="section__text__p2">Quality Assurance Tester</p>
+        <p class="hero-summary">
+          Detail-oriented QA tester with 3+ years of manual and automated testing experience in Agile
+          teams, focused on user-friendly, error-free software.
+        </p>
+        <div class="impact-grid">
+          <div class="impact-card">
+            <h3>3+ Years</h3>
+            <p>Testing experience</p>
+          </div>
+          <div class="impact-card">
+            <h3>ISTQB</h3>
+            <p>Foundation certified</p>
+          </div>
+          <div class="impact-card">
+            <h3>NQF 5</h3>
+            <p>ICT Software Testing</p>
+          </div>
+        </div>
         <div class="btn-container">
+          <button class="btn btn-color-1" onclick="location.href='./#work'">
+            View Experience
+          </button>
           <button
             class="btn btn-color-2"
             onclick="window.open('./assets/Mr Baphelele Dlamini Curriculum Vitae (2).docx (2).pdf')"
           >
             Download CV
           </button>
-          <button class="btn btn-color-1" onclick="location.href='./#contact'">
-            Contact Info
-          </button>
+        </div>
+        <div class="inline-cta">
+          <span>Prefer email?</span>
+          <a href="mailto:pelesonke@gmail.com">pelesonke@gmail.com</a>
         </div>
         <div id="socials-container">
-          <img
-            src="./assets/linkedin.png"
-            alt="My LinkedIn profile"
-            class="icon"
-            onclick="location.href='https://www.linkedin.com/feed/?trk=nav_logo'"
-          />
-          <img
-            src="./assets/github.png"
-            alt="My Github profile"
-            class="icon"
-            onclick="location.href='https://github.com/'"
-          />
+          <a
+            href="https://www.linkedin.com/feed/?trk=nav_logo"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Visit my LinkedIn profile"
+          >
+            <img src="./assets/linkedin.png" alt="LinkedIn" class="icon" />
+          </a>
+          <a
+            href="https://github.com/Nathisonke"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Visit my GitHub profile"
+          >
+            <img src="./assets/github.png" alt="GitHub" class="icon" />
+          </a>
         </div>
       </div>
     </section>
@@ -77,44 +110,63 @@
       <p class="section__text__p1">Get To Know More</p>
       <h1 class="title">About Me</h1>
       <div class="section-container">
-        <div class="section__pic-container">
+        <div class="section__pic-container reveal">
           <img
             src="./assets/about-pic.jpg"
             alt="Profile picture"
             class="about-pic"
           />
         </div>
-        <div class="about-details-container">
+        <div class="about-details-container reveal">
           <div class="about-containers">
-            <div class="details-container">
+            <div class="details-container reveal">
               <img
                 src="./assets/experience.png"
                 alt="Experience icon"
                 class="icon"
               />
               <h3>Experience</h3>
-              <p>10+ Months <br />Frontend Development</p>
+              <p>3+ Years <br />QA Testing</p>
             </div>
-            <!-- <div class="details-container">
+            <div class="details-container reveal">
               <img
                 src="./assets/education.png"
                 alt="Education icon"
                 class="icon"
               />
-             <h3>Education</h3>
-              <p>B.Sc. Bachelors Degree<br />M.Sc. Masters Degree</p>
+              <h3>Certifications</h3>
+              <p>ISTQB Foundation<br />CompTIA A+</p>
             </div>
-          </div> -->
+          </div>
           <div class="text-container">
-            <p>
-              I'm proficient in JavaScript,HTML5,CSS3. I have built dynamic applications with
-              Node.js,Express, React, MongoDB for Database. When it comes to deployment I use Heroku or vercel.For version control I use Git and GitHub. For UI/UX I use Figma.
-              
-              
-              I have a fair understanding of the application's Life-Cycle, Process, Tools and Techniques to
-              bring it to life. I have Good Communication skills(in both Oral and Writing), good awareness
-              and Conflict management skills, basic analytical and problem/troubleshooting skills.
+            <p class="about-intro">
+              I focus on quality-first delivery, designing tests that protect user experience and system
+              reliability.
             </p>
+            <ul class="about-highlights">
+              <li>Design and execute manual test cases across web applications.</li>
+              <li>Automate GUI and web tests with Selenium, Playwright, and Robot Framework.</li>
+              <li>Validate REST APIs with Postman and verify data with SQL.</li>
+              <li>Collaborate in Agile/Scrum teams with clear defect tracking in JIRA.</li>
+            </ul>
+            <div class="profile-details">
+              <h3>Profile Details</h3>
+              <ul>
+                <li>Location: Johannesburg, Gauteng, South Africa</li>
+                <li>Date of Birth: 09/09/1999</li>
+                <li>Gender: Male</li>
+                <li>Nationality: South African</li>
+                <li>Race: Black</li>
+                <li>Driver's License: C1</li>
+              </ul>
+            </div>
+            <div class="profile-details">
+              <h3>Interests</h3>
+              <ul>
+                <li>Programming (Software Development)</li>
+                <li>Quality Assurance Automation Engineering</li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
@@ -126,12 +178,12 @@
       />
     </section>
     <section id="experience">
-      <p class="section__text__p1">Explore My</p>
-      <h1 class="title">Experience</h1>
+      <p class="section__text__p1">Testing Focus</p>
+      <h1 class="title">QA Skills & Tools</h1>
       <div class="experience-details-container">
         <div class="about-containers">
-          <div class="details-container">
-            <h2 class="experience-sub-title">Frontend Development</h2>
+          <div class="details-container reveal">
+            <h2 class="experience-sub-title">Testing Methodologies</h2>
             <div class="article-container">
               <article>
                 <img
@@ -140,8 +192,8 @@
                   class="icon"
                 />
                 <div>
-                  <h3>HTML</h3>
-                  <p>Experienced</p>
+                  <h3>Manual Testing</h3>
+                  <p>User-focused coverage</p>
                 </div>
               </article>
               <article>
@@ -151,8 +203,8 @@
                   class="icon"
                 />
                 <div>
-                  <h3>CSS</h3>
-                  <p>Experienced</p>
+                  <h3>Automated Testing</h3>
+                  <p>Repeatable scripts</p>
                 </div>
               </article>
               <article>
@@ -162,8 +214,8 @@
                   class="icon"
                 />
                 <div>
-                  <h3>SASS</h3>
-                  <p>Intermediate</p>
+                  <h3>Functional Testing</h3>
+                  <p>Feature validation</p>
                 </div>
               </article>
               <article>
@@ -173,8 +225,8 @@
                   class="icon"
                 />
                 <div>
-                  <h3>JavaScript</h3>
-                  <p>Basic</p>
+                  <h3>Regression Testing</h3>
+                  <p>Protect releases</p>
                 </div>
               </article>
               <article>
@@ -184,25 +236,14 @@
                   class="icon"
                 />
                 <div>
-                  <h3>TypeScript</h3>
-                  <p>Basic</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Material UI</h3>
-                  <p>Intermediate</p>
+                  <h3>Risk-Based Testing</h3>
+                  <p>Priority coverage</p>
                 </div>
               </article>
             </div>
           </div>
-          <div class="details-container">
-            <h2 class="experience-sub-title">Backend Development</h2>
+          <div class="details-container reveal">
+            <h2 class="experience-sub-title">Testing Tools</h2>
             <div class="article-container">
               <article>
                 <img
@@ -211,8 +252,8 @@
                   class="icon"
                 />
                 <div>
-                  <h3>MongoDB</h3>
-                  <p>Intermediate</p>
+                  <h3>JIRA</h3>
+                  <p>Cases and defects</p>
                 </div>
               </article>
               <article>
@@ -222,8 +263,8 @@
                   class="icon"
                 />
                 <div>
-                  <h3>Node JS</h3>
-                  <p>Basic</p>
+                  <h3>Postman</h3>
+                  <p>API validation</p>
                 </div>
               </article>
               <article>
@@ -233,8 +274,68 @@
                   class="icon"
                 />
                 <div>
-                  <h3>Express JS</h3>
-                  <p>Intermediate</p>
+                  <h3>Selenium (Java)</h3>
+                  <p>Web automation</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Robot Framework</h3>
+                  <p>Python automation</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Playwright</h3>
+                  <p>Cross-browser</p>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="details-container reveal">
+            <h2 class="experience-sub-title">Programming & Data</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Java</h3>
+                  <p>Test automation</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Python</h3>
+                  <p>Robot Framework</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>SQL</h3>
+                  <p>Data validation</p>
                 </div>
               </article>
               <article>
@@ -245,7 +346,56 @@
                 />
                 <div>
                   <h3>Git</h3>
-                  <p>Intermediate</p>
+                  <p>Version control</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Documentation</h3>
+                  <p>Test cases</p>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="details-container reveal">
+            <h2 class="experience-sub-title">Process & Collaboration</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Agile/Scrum</h3>
+                  <p>Daily delivery</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>STLC</h3>
+                  <p>Test planning</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Defect Tracking</h3>
+                  <p>Fast feedback</p>
                 </div>
               </article>
             </div>
@@ -256,81 +406,186 @@
         src="./assets/arrow.png"
         alt="Arrow icon"
         class="icon arrow"
+        onclick="location.href='./#work'"
+      />
+    </section>
+    <section id="work">
+      <p class="section__text__p1">Career Timeline</p>
+      <h1 class="title">Work Experience</h1>
+      <div class="timeline">
+        <div class="timeline-item reveal">
+          <div class="timeline-header">
+            <h2 class="experience-sub-title">Quality Assurance Automation Tester Specialist</h2>
+            <span class="pill">Oct 2024 - Present</span>
+          </div>
+          <p class="role-meta">Reverside Software Solutions - Johannesburg</p>
+          <ul class="timeline-list">
+            <li>Design and execute manual test cases for web applications.</li>
+            <li>Automate GUI and web testing using Selenium (Java), Robot Framework (Python), and Playwright.</li>
+            <li>Manage test cases and track defects in JIRA for faster resolution.</li>
+            <li>Validate REST APIs using Postman to ensure reliable data flow.</li>
+            <li>Conduct functional, regression, and risk-based testing in Agile workflows.</li>
+          </ul>
+        </div>
+        <div class="timeline-item reveal">
+          <div class="timeline-header">
+            <h2 class="experience-sub-title">Junior Software Development Engineer in Test (SDET)</h2>
+            <span class="pill">Feb 2022 - Sep 2024</span>
+          </div>
+          <p class="role-meta">Stowe Holdings - Centurion</p>
+          <ul class="timeline-list">
+            <li>Performed manual testing across Chrome, Firefox, and Safari.</li>
+            <li>Automated GUI testing with Selenium and Java.</li>
+            <li>Tested REST APIs with Postman to verify backend data.</li>
+            <li>Used Jasmine and Karma to test Angular components.</li>
+            <li>Queried PostgreSQL databases with SQL to confirm data accuracy.</li>
+          </ul>
+        </div>
+        <div class="timeline-item reveal">
+          <div class="timeline-header">
+            <h2 class="experience-sub-title">Fashion Consultant & Denim Specialist</h2>
+            <span class="pill">2017 - 2021</span>
+          </div>
+          <p class="role-meta">Fabiani (2017-2018) - G-STAR Raw (2018-2021)</p>
+          <ul class="timeline-list">
+            <li>Supported customers with product guidance and fit advice.</li>
+            <li>Handled administrative documentation and in-store operations.</li>
+          </ul>
+        </div>
+      </div>
+      <div class="education-grid">
+        <div class="details-container reveal">
+          <h2 class="experience-sub-title">Education</h2>
+          <p>National Certificate in ICT Software Testing (NQF 5)</p>
+          <p>Geeks4Learning, Johannesburg - 2024-2025 (Completed)</p>
+        </div>
+        <div class="details-container reveal">
+          <h2 class="experience-sub-title">Certifications</h2>
+          <p>ISTQB Foundation Certificate - 2025 (Completed)</p>
+          <p>CompTIA A+ - 2024 (Completed)</p>
+        </div>
+        <div class="details-container reveal">
+          <h2 class="experience-sub-title">High School</h2>
+          <p>Grade 12 (Matric)</p>
+          <p>Ndlela Secondary School - 2015</p>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
         onclick="location.href='./#projects'"
       />
     </section>
     <section id="projects">
-      <p class="section__text__p1">Browse My Recent</p>
-      <h1 class="title">Projects</h1>
+      <p class="section__text__p1">Testing Portfolio</p>
+      <h1 class="title">QA Projects (Updating)</h1>
       <div class="experience-details-container">
         <div class="about-containers">
-          <div class="details-container color-container">
+          <div class="details-container color-container project-card featured reveal">
+            <div class="project-badge">Featured</div>
             <div class="article-container">
               <img
                 src="./assets/project-1.png"
-                alt="Project 1"
+                alt="Test automation case study preview"
                 class="project-img"
               />
             </div>
-            <h2 class="experience-sub-title project-title">Project One</h2>
+            <h2 class="experience-sub-title project-title">Automation Regression Suite</h2>
+            <p class="project-summary">
+              End-to-end UI regression coverage with data-driven scenarios.
+            </p>
+            <ul class="project-metrics">
+              <li>Focus: stable selectors, reporting, cross-browser runs.</li>
+              <li>Stack: Selenium, Playwright, Java.</li>
+            </ul>
+            <div class="project-tags">
+              <span>Selenium</span>
+              <span>Playwright</span>
+              <span>Automation</span>
+            </div>
             <div class="btn-container">
               <button
                 class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/Nathisonke/GameHub-new'"
+                onclick="location.href='#'"
               >
                 Github
               </button>
               <button
                 class="btn btn-color-2 project-btn"
-                onclick="location.href='https://game-hub-blond-pi.vercel.app/'"
+                onclick="location.href='#'"
               >
                 Live Demo
               </button>
             </div>
           </div>
-          <div class="details-container color-container">
+          <div class="details-container color-container project-card reveal">
             <div class="article-container">
               <img
                 src="./assets/project-2.png"
-                alt="Project 2"
+                alt="API testing case study preview"
                 class="project-img"
               />
             </div>
-            <h2 class="experience-sub-title project-title">Project Two</h2>
+            <h2 class="experience-sub-title project-title">API Validation Suite</h2>
+            <p class="project-summary">
+              Automated API checks for reliability, data integrity, and error handling.
+            </p>
+            <ul class="project-metrics">
+              <li>Focus: regression checks and contract validation.</li>
+              <li>Stack: Postman, SQL.</li>
+            </ul>
+            <div class="project-tags">
+              <span>Postman</span>
+              <span>API</span>
+              <span>SQL</span>
+            </div>
             <div class="btn-container">
               <button
                 class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/Nathisonke/ToDo-Application'"
+                onclick="location.href='#'"
               >
                 Github
               </button>
               <button
                 class="btn btn-color-2 project-btn"
-                onclick="location.href='https://to-do-application-two.vercel.app/'"
+                onclick="location.href='#'"
               >
                 Live Demo
               </button>
             </div>
           </div>
-          <div class="details-container color-container">
+          <div class="details-container color-container project-card reveal">
             <div class="article-container">
               <img
                 src="./assets/project-3.png"
-                alt="Project 3"
+                alt="Manual testing case study preview"
                 class="project-img"
               />
             </div>
-            <h2 class="experience-sub-title project-title">Project Three</h2>
+            <h2 class="experience-sub-title project-title">Manual Testing Playbook</h2>
+            <p class="project-summary">
+              Comprehensive test cases, exploratory charters, and defect reporting templates.
+            </p>
+            <ul class="project-metrics">
+              <li>Focus: user journeys, edge cases, and regression packs.</li>
+              <li>Status: updating with recent engagements.</li>
+            </ul>
+            <div class="project-tags">
+              <span>Manual</span>
+              <span>Reporting</span>
+              <span>QA Docs</span>
+            </div>
             <div class="btn-container">
               <button
                 class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
+                onclick="location.href='#'"
               >
                 Github
               </button>
               <button
                 class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
+                onclick="location.href='#'"
               >
                 Live Demo
               </button>
@@ -348,7 +603,7 @@
     <section id="contact">
       <p class="section__text__p1">Get in Touch</p>
       <h1 class="title">Contact Me</h1>
-      <div class="contact-info-upper-container">
+      <div class="contact-info-upper-container reveal">
         <div class="contact-info-container">
           <img
             src="./assets/email.png"
@@ -358,6 +613,20 @@
           <p><a href="mailto:pelesonke@gmail.com">pelesonke@gmail.com</a></p>
         </div>
         <div class="contact-info-container">
+          <svg
+            class="icon contact-icon"
+            viewBox="0 0 24 24"
+            role="img"
+            aria-label="Phone icon"
+          >
+            <path
+              d="M6.6 3.2c.4-.3 1-.3 1.4 0l2.1 1.8c.4.4.5 1 .2 1.5l-1.2 2.3c.8 1.5 2 2.7 3.5 3.5l2.3-1.2c.5-.3 1.1-.2 1.5.2l1.8 2.1c.3.4.3 1 0 1.4l-1.5 1.5c-.4.4-.9.6-1.5.6-4 0-7.8-2.2-9.9-5.7-2.5-4.1-2-8.2.7-10.9l1.5-1.5z"
+              fill="currentColor"
+            />
+          </svg>
+          <p><a href="tel:+27734859297">073 485 9297</a></p>
+        </div>
+        <div class="contact-info-container">
           <img
             src="./assets/linkedin.png"
             alt="LinkedIn icon"
@@ -365,20 +634,38 @@
           />
           <p><a href="https://www.linkedin.com/feed/?trk=nav_logo">LinkedIn</a></p>
         </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/github.png"
+            alt="GitHub icon"
+            class="icon contact-icon"
+          />
+          <p><a href="https://github.com/Nathisonke">GitHub</a></p>
+        </div>
       </div>
+      <div class="contact-cta reveal">
+        <button class="btn btn-color-1" onclick="location.href='mailto:pelesonke@gmail.com'">
+          Email Me
+        </button>
+        <button class="btn btn-color-2" onclick="location.href='./#projects'">
+          View Projects
+        </button>
+      </div>
+      <p class="contact-note">Johannesburg, Gauteng, South Africa - Open to QA roles.</p>
     </section>
     <footer>
       <nav>
         <div class="nav-links-container">
           <ul class="nav-links">
             <li><a href="#about">About</a></li>
-            <li><a href="#experience">Experience</a></li>
+            <li><a href="#experience">QA Skills</a></li>
+            <li><a href="#work">Experience</a></li>
             <li><a href="#projects">Projects</a></li>
             <li><a href="#contact">Contact</a></li>
           </ul>
         </div>
       </nav>
-      <p>Copyright &#169; 2024 Baphelele Nathisonke Dlamini. All Rights Reserved.</p>
+      <p>Copyright &#169; 2026 Baphelele Nathisonke Dhlamini. All Rights Reserved.</p>
     </footer>
     <script src="script.js"></script>
   </body>

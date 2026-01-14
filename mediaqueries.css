@@ -45,6 +45,9 @@
     .about-containers {
       margin-top: 0;
     }
+    .impact-grid {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
   }
   
   @media screen and (max-width: 600px) {
@@ -66,6 +69,19 @@
     .about-containers,
     .contact-info-upper-container,
     .btn-container {
+      flex-wrap: wrap;
+    }
+    .impact-grid {
+      grid-template-columns: 1fr;
+    }
+    .project-img {
+      height: 180px;
+    }
+    .inline-cta {
+      flex-direction: column;
+      align-items: center;
+    }
+    .contact-cta {
       flex-wrap: wrap;
     }
     .contact-info-container {
