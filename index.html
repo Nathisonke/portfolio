@@ -88,7 +88,7 @@
         </div>
         <div id="socials-container">
           <a
-            href="https://www.linkedin.com/feed/?trk=nav_logo"
+            href="https://www.linkedin.com/in/baphelele-dlamini-801794268/"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="Visit my LinkedIn profile"
@@ -149,23 +149,25 @@
               <li>Validate REST APIs with Postman and verify data with SQL.</li>
               <li>Collaborate in Agile/Scrum teams with clear defect tracking in JIRA.</li>
             </ul>
-            <div class="profile-details">
-              <h3>Profile Details</h3>
-              <ul>
-                <li>Location: Johannesburg, Gauteng, South Africa</li>
-                <li>Date of Birth: 09/09/1999</li>
-                <li>Gender: Male</li>
-                <li>Nationality: South African</li>
-                <li>Race: Black</li>
-                <li>Driver's License: C1</li>
-              </ul>
-            </div>
-            <div class="profile-details">
-              <h3>Interests</h3>
-              <ul>
-                <li>Programming (Software Development)</li>
-                <li>Quality Assurance Automation Engineering</li>
-              </ul>
+            <div class="profile-meta-grid">
+              <div class="profile-details">
+                <h3>Profile Details</h3>
+                <ul>
+                  <li>Location: Johannesburg, Gauteng, South Africa</li>
+                  <li>Date of Birth: 09/09/1999</li>
+                  <li>Gender: Male</li>
+                  <li>Nationality: South African</li>
+                  <li>Race: Black</li>
+                  <li>Driver's License: C1</li>
+                </ul>
+              </div>
+              <div class="profile-details">
+                <h3>Interests</h3>
+                <ul>
+                  <li>Programming (Software Development)</li>
+                  <li>Quality Assurance Automation Engineering</li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>
@@ -181,8 +183,8 @@
       <p class="section__text__p1">Testing Focus</p>
       <h1 class="title">QA Skills & Tools</h1>
       <div class="experience-details-container">
-        <div class="about-containers">
-          <div class="details-container reveal">
+        <div class="about-containers skill-grid">
+          <div class="details-container skill-card reveal">
             <h2 class="experience-sub-title">Testing Methodologies</h2>
             <div class="article-container">
               <article>
@@ -242,7 +244,7 @@
               </article>
             </div>
           </div>
-          <div class="details-container reveal">
+          <div class="details-container skill-card reveal">
             <h2 class="experience-sub-title">Testing Tools</h2>
             <div class="article-container">
               <article>
@@ -302,7 +304,7 @@
               </article>
             </div>
           </div>
-          <div class="details-container reveal">
+          <div class="details-container skill-card reveal">
             <h2 class="experience-sub-title">Programming & Data</h2>
             <div class="article-container">
               <article>
@@ -362,7 +364,7 @@
               </article>
             </div>
           </div>
-          <div class="details-container reveal">
+          <div class="details-container skill-card reveal">
             <h2 class="experience-sub-title">Process & Collaboration</h2>
             <div class="article-container">
               <article>
@@ -413,7 +415,8 @@
       <p class="section__text__p1">Career Timeline</p>
       <h1 class="title">Work Experience</h1>
       <div class="timeline">
-        <div class="timeline-item reveal">
+        <div class="timeline-item timeline-item--current reveal">
+          <span class="role-tag">Current role</span>
           <div class="timeline-header">
             <h2 class="experience-sub-title">Quality Assurance Automation Tester Specialist</h2>
             <span class="pill">Oct 2024 - Present</span>
@@ -427,7 +430,7 @@
             <li>Conduct functional, regression, and risk-based testing in Agile workflows.</li>
           </ul>
         </div>
-        <div class="timeline-item reveal">
+        <div class="timeline-item timeline-item--previous reveal">
           <div class="timeline-header">
             <h2 class="experience-sub-title">Fashion Consultant & Denim Specialist</h2>
             <span class="pill">2017 - 2021</span>
@@ -480,41 +483,36 @@
       <p class="section__text__p1">Testing Portfolio</p>
       <h1 class="title">QA Projects (Updating)</h1>
       <div class="experience-details-container">
-        <div class="about-containers">
+        <div class="about-containers projects-grid">
           <div class="details-container color-container project-card featured reveal">
             <div class="project-badge">Featured</div>
             <div class="article-container">
               <img
                 src="./assets/project-1.png"
-                alt="Test automation case study preview"
+                alt="AutomationExercise testing framework preview"
                 class="project-img"
               />
             </div>
-            <h2 class="experience-sub-title project-title">Automation Regression Suite</h2>
+            <h2 class="experience-sub-title project-title">AutomationExercise</h2>
             <p class="project-summary">
-              End-to-end UI regression coverage with data-driven scenarios.
+              Automation Exercise Testing Framework built with Java, Cucumber, and Selenium.
             </p>
             <ul class="project-metrics">
-              <li>Focus: stable selectors, reporting, cross-browser runs.</li>
-              <li>Stack: Selenium, Playwright, Java.</li>
+              <li>Type: UI automation testing framework.</li>
+              <li>Stack: Java, Cucumber, Selenium.</li>
             </ul>
             <div class="project-tags">
+              <span>Java</span>
+              <span>Cucumber</span>
               <span>Selenium</span>
-              <span>Playwright</span>
               <span>Automation</span>
             </div>
             <div class="btn-container">
               <button
                 class="btn btn-color-2 project-btn"
-                onclick="location.href='#'"
+                onclick="location.href='https://github.com/Nathisonke/AutomationExercise'"
               >
-                Github
-              </button>
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='#'"
-              >
-                Live Demo
+                GitHub
               </button>
             </div>
           </div>
@@ -604,11 +602,16 @@
       <h1 class="title">Contact Me</h1>
       <div class="contact-info-upper-container reveal">
         <div class="contact-info-container">
-          <img
-            src="./assets/email.png"
-            alt="Email icon"
-            class="icon contact-icon email-icon"
-          />
+          <a
+            href="mailto:pelesonke@gmail.com"
+            aria-label="Email me at pelesonke@gmail.com"
+          >
+            <img
+              src="./assets/email.png"
+              alt="Email icon"
+              class="icon contact-icon email-icon"
+            />
+          </a>
           <p><a href="mailto:pelesonke@gmail.com">pelesonke@gmail.com</a></p>
         </div>
         <div class="contact-info-container">
@@ -631,7 +634,7 @@
             alt="LinkedIn icon"
             class="icon contact-icon"
           />
-          <p><a href="https://www.linkedin.com/feed/?trk=nav_logo">LinkedIn</a></p>
+          <p><a href="https://www.linkedin.com/in/baphelele-dlamini-801794268/">LinkedIn</a></p>
         </div>
         <div class="contact-info-container">
           <img
