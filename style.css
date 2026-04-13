@@ -375,7 +375,7 @@ section {
 
 .impact-grid {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
   gap: 1rem;
   margin: 1.75rem 0;
 }
@@ -714,6 +714,49 @@ section {
 
 #work .education-grid .details-container {
   background: rgba(255, 255, 255, 0.66);
+}
+
+.cert-list {
+  list-style: none;
+  padding-left: 0;
+  display: grid;
+  gap: 0.65rem;
+  text-align: left;
+}
+
+.cert-list li {
+  position: relative;
+  padding-left: 1rem;
+}
+
+.cert-list li::before {
+  content: "-";
+  position: absolute;
+  left: 0;
+  color: var(--accent-2);
+}
+
+.cert-link-grid {
+  display: grid;
+  gap: 0.75rem;
+  margin-top: 1.25rem;
+}
+
+.cert-proof-link {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.8rem 1rem;
+  border-radius: 1rem;
+  border: 1px solid rgba(15, 26, 28, 0.08);
+  background: rgba(255, 255, 255, 0.86);
+  box-shadow: var(--shadow-soft);
+  font-weight: 600;
+}
+
+.cert-proof-link:hover {
+  text-decoration: none;
+  transform: translateY(-2px);
 }
 
 .cert-proof {
